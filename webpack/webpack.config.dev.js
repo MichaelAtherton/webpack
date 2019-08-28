@@ -29,9 +29,10 @@ module.exports = merge(common, {
         }
       },
       {
-        test: /\.(js)$/,
-        include: Path.resolve(__dirname, '../src'),
-        loader: 'babel-loader'
+        // These 3 lines compile the js down to ES5 which I didn't want because I'll be using ES6
+        // test: /\.(js)$/,
+        // include: Path.resolve(__dirname, '../src'),
+        // loader: 'babel-loader'
       },
       {
         test: /\.s?css$/i,
